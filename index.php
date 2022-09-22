@@ -19,7 +19,7 @@
     <?php
 $servername = "localhost";
 $username = "hahersle_homework3	";
-$password = "V8N9M37o{2Q2";
+$password = "5n0Y4@&_COA!";
 $dbname = "hahersle_homework3	";
 
 // Create connection
