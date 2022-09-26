@@ -20,7 +20,7 @@
           <a class="nav-link active" aria-current="page" href="https://homework3.hahersley.oucreate.com/#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://homework2.hahersley.oucreate.com/Adaption">Page 2</a>
+          <a class="nav-link" href="https://homework2.hahersley.oucreate.com/Adaption.html">Page 2</a>
         </li>
             <li class="nav-item">
           <a class="nav-link" href="https://www.cinemark.com/">Page 3</a>
