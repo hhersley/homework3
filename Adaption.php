@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT book_id, title from Book";
+$sql = "SELECT series_id, series_name, main_character from Series";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
