@@ -17,7 +17,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT DISTINCT A.author_id, author_name from Author";
+$sql = "SELECT author_id, author_name from Author";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -30,7 +30,7 @@ if ($result->num_rows > 0) {
       <h5 class="card-title"><?=$row["author_name"]?></h5>
       <p class="card-text"><ul>
 <?php
-    $section_sql = "SELECT S.series_name FROM Author A Join Series S on A.author_id = S.author_id where S.author_id=" . $row["author_id"];
+    $section_sql = "SELECT series_name FROM Author A Join Series S on A.author_id = S.author_id where S.author_id=" . $row["author_id"];
     $section_result = $conn->query($section_sql);
     
     while($section_row = $section_result->fetch_assoc()) {
