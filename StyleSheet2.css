@@ -6,7 +6,18 @@
 }
 .card
 {
-  width: 25%;
-    height: 50%%;
+
     float:left;
+}
+
+#img2
+{
+         width: 25%;
+    height: 50%%;
+}
+
+#card-body
+{
+       width:25%;
+       height:10%;
 }
