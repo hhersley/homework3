@@ -2,7 +2,7 @@
 
   <body>
     
-    <h1>Books in the Series</h1>
+    <h1>Books in <?=$row["series_name"]?></h1>
     
 <table class="table table-striped">
   <thead>
