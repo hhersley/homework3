@@ -2,19 +2,9 @@
 
   <body>
    
- <h1>Books in this Series</h1>
-    
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Series ID</th>
-      <th>Series Name</th>
-      <th>Main Character</th>
-            <th>Title</th>
+<div class="card-group">
 
-    </tr>
-  </thead>
-  <tbody>
+    
     <?php
 $servername = "localhost";
 $username = "hahersle_homework3";
@@ -28,7 +18,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
  $sid = $_GET['id'];
-      $sql = "SELECT S.series_id, series_name, main_character, title from Series S join Book B on S.series_id = B.series_id where S.series_id=" . $sid;
+      $sql = "SELECT series_name, title, image from Series S join Book B on S.series_id = B.series_id where S.series_id=" . $sid;
 
 
 $result = $conn->query($sql);
@@ -37,13 +27,16 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-  <tr>
-    <td><?=$row["series_id"]?></td>
-    <td><?=$row["series_name"]?></td>
-    <td><?=$row["main_character"]?></td>
-        <td><?=$row["title"]?></td>
+     <h1>Books in <?php . $sid ?></h1>
+  
+   <div id="card" class="card"  style="width: 15rem; height: 30rem;">
+  <img  src=<?=$row["image"]?> class="card-img-top" alt="...">
+  <div  class="card-body">
+    <h5 class="card-title"><?=$row["title"]?></h5>
+  </div>
 
-  </tr>
+  </div>
+    </div>
 <?php
   }
 } else {
@@ -51,6 +44,8 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-      </tbody>
-    </table>
+      </card-group>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
     
