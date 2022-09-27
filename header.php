@@ -20,10 +20,10 @@
           <a class="nav-link active" aria-current="page" href="https://homework3.hahersley.oucreate.com/#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Adaption.php">Page 2</a>
+          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Adaptation.php">Adaptation</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="https://www.cinemark.com/">Page 3</a>
+          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Book.php">Books</a>
         </li>
             <li class="nav-item">
           <a class="nav-link" href="https://www.amctheatres.com/">Page 4</a>
