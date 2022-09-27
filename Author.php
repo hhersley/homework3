@@ -51,7 +51,7 @@ $conn->close();
     </card-group>
 
 <h1> Looking for a specific book?</h1>
- <form action="handlepost.php" method="post">
+ <form action="HandlePost.php" method="post">
 Name: <input type="text" name="name"><br>
 Title: <input type="text" name="title"><br>
 <input id="submit" type="submit">
