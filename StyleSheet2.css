@@ -1,5 +1,11 @@
+#img1
+{
+       width: 10%;
+    height: 10%;
+
+}
 .card
 {
-  width: 20px;
+  width: 10%;
     float:left;
 }
