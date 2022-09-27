@@ -1,10 +1,7 @@
 <?php require_once('header.php'); ?>
 
   <body>
-   
 <div class="card-group">
-
-    
     <?php
 $servername = "localhost";
 $username = "hahersle_homework3";
@@ -18,7 +15,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
  $sid = $_GET['id'];
-      $sql = "SELECT series_name, title, image from Series S join Book B on S.series_id = B.series_id where S.series_id=" . $sid;
+      $sql = "SELECT S.series_id, series_name, title, image from Series S join Book B on S.series_id = B.series_id where S.series_id=" . $sid;
 
 
 $result = $conn->query($sql);
