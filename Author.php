@@ -24,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT A.author_id, author_name, series_name, title FROM Author A Join Series S on A.author_id = S.author_id Join Book B on S.series_id = B.series_id";
+$sql = "SELECT DISTINCT A.author_id, author_name, series_name, title FROM Author A Join Series S on A.author_id = S.author_id Join Book B on S.series_id = B.series_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
