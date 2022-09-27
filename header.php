@@ -19,17 +19,17 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="https://homework3.hahersley.oucreate.com/#">Home</a>
         </li>
-        <li class="nav-item">
+            <li class="nav-item">
+          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Book.php">Library</a>
+        </li>
+            <li class="nav-item">
           <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Adaptation.php">Adaptation</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Book.php">Books</a>
+          <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Author.php">Authors</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="https://www.amctheatres.com/">Page 4</a>
-        </li>
-            <li class="nav-item">
-          <a class="nav-link" href="https://www.regmovies.com/">Page 5</a>
+          <a class="nav-link" href="https://www.regmovies.com/">Barnes & Noble</a>
         </li>
         
        
