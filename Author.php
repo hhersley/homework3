@@ -7,6 +7,7 @@
       <th>Author ID</th>
       <th>Name</th>
       <th>Series</th>
+        <th>Book title</th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT A.author_id, author_name, series_name FROM Author A Join Series S on A.author_id = S.author_id";
+$sql = "SELECT A.author_id, author_name, series_name, title FROM Author A Join Series S on A.author_id = S.author_id Join Book B on S.series_id = B.series_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -34,6 +35,8 @@ if ($result->num_rows > 0) {
     <td><?=$row["author_id"]?></td>
     <td><?=$row["author_name"]?></td>
     <td><?=$row["series_name"]?></td>
+         <td><?=$row["title"]?></td>
+
 
 
   </tr>
