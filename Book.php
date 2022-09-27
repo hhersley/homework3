@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-     <div class="card" >
+     <div class="card"  >
   <img id= "img2" src=<?=$row["image"]?> class="card-img-top" alt="...">
   <div id="card-body" class="card-body">
     <h5 class="card-title"><?=$row["title"]?></h5>
