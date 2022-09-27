@@ -42,3 +42,16 @@
     </div>
   </div>
 </nav>
+    
+        <?php
+    function emptypost() {
+$name = $_POST["name"];
+    $title = $_POST["title"];
+
+if (empty($name))
+    echo "You need to enter your name; ";
+ 
+if (empty($title))
+    echo "You need to enter a book title";
+    }
+?>
