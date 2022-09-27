@@ -6,8 +6,7 @@
 }
 .card
 {
-  width: 25px;
-    height: 50px;
+  width: 50%;
+    height: 75%;
     float:left;
-       padding: 2%;
 }
