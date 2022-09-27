@@ -7,7 +7,7 @@
       <th>Adaptation ID</th>
       <th>Title</th>
       <th>Format</th>
-      <th>Year<?th>
+      <th>Year</th>
     </tr>
   </thead>
   <tbody>
