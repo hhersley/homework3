@@ -36,7 +36,7 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["series_id"]?></td>
-    <td><?=$row["series_name"]?></td>
+    <td><a href="Series-Book.php?id=<?=$row["series_id"]?>"><?=$row["series_name"]?></a></td>
     <td><?=$row["main_character"]?></td>
   </tr>
 <?php
