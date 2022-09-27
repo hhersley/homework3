@@ -4,8 +4,10 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Book ID</th>
+      <th>Adaptation ID</th>
       <th>Title</th>
+      <th>Format</th>
+      <th>Year<?th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT book_id, title from Book";
+$sql = "select adaptation_id, title, format, year from Adaptation A JOIN Book B on B.book_id=A.book_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -30,8 +32,12 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["book_id"]?></td>
+    <td><?=$row["adaptation_id"]?></td>
     <td><?=$row["title"]?></td>
+          <td><?=$row["format"]?></td>
+          <td><?=$row["year"]?></td>
+
+
   </tr>
 <?php
   }
