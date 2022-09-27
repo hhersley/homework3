@@ -1,8 +1,8 @@
 <?php require_once('header.php'); ?>
 
   <body>
-    $sid = $_GET['id'];
-    <h1>Books in <?$sid?></h1>
+   
+ <h1>Books in <?=$row["series_name"]?></h1>
     
 <table class="table table-striped">
   <thead>
@@ -27,7 +27,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-
+ $sid = $_GET['id'];
       $sql = "SELECT S.series_id, series_name, main_character, title from Series S join Book B on S.series_id = B.series_id where S.series_id=" . $sid;
 
 
