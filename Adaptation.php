@@ -24,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT adaptation_id, format, year from Adaptation";
+$sql = "SELECT adaptation_id, title, format, year from Adaptation A JOIN Book B on A.book_id = B.book_id";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -33,6 +33,8 @@ if ($result->num_rows > 0) {
 ?>
   <tr>
     <td><?=$row["adaptation_id"]?></td>
+                <td><?=$row["title"]?></td>
+
           <td><?=$row["format"]?></td>
           <td><?=$row["year"]?></td>
 
