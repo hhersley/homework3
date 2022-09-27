@@ -24,7 +24,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select adaptation_id,  format, year from Adaptation";
+$sql = "SELECT adaptation_id, format, year from Adaptation";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
