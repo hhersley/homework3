@@ -1,7 +1,6 @@
  <?php require_once('header.php'); ?>
 
   <body>
-    <h1>Post response</h1>
     Hello <?php echo $_POST["name"]; ?> !<br>
 You are looking for: <?php echo $_POST["title"]; ?><br>
     
@@ -23,9 +22,9 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
- $title = $_POST['title'];
+ $title = $_POST["title"];
 
-$sql = "Select title, image from Book where title=" . $title;;
+$sql = "Select title, image from Book where title=" . $title;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -43,7 +42,7 @@ if ($result->num_rows > 0) {
 <?php
   }
 } else {
-  echo "0 results";
+  echo "So sorry, that isn't in our library!";
 }
 $conn->close();
 ?>
