@@ -29,7 +29,7 @@
           <a class="nav-link" href="https://homework3.hahersley.oucreate.com/Author.php">Authors</a>
         </li>
             <li class="nav-item">
-          <a class="nav-link" href="https://www.regmovies.com/">Barnes & Noble</a>
+          <a class="nav-link" href="https://www.barnesandnoble.com/">Barnes & Noble</a>
         </li>
         
        
