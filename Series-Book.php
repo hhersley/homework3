@@ -8,7 +8,7 @@
   <thead>
     <tr>
       <th>Series ID</th>
-      <th>Name</th>
+      <th>Series Name</th>
       <th>Main Character</th>
             <th>Title</th>
 
