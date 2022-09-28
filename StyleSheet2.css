@@ -10,3 +10,44 @@
     float:right;
 }
 
+body 
+{
+      font-size:115%;
+      text-align:center;
+    color: #FFFFFF;
+    background-color:#77BA99;
+}
+h1
+{
+    
+    text-align:center;
+    color: #FFFFFF;
+    font-size: 125%;
+    font-style:bold;
+    padding: 10px;
+
+}
+h2
+{
+       text-align:center;
+    color: #FFFFFF;
+    font-size: 150%;
+    font-style:bold;
+    padding: 10px;
+}
+
+p
+{
+       text-align:center;
+    color: #FFFFFF;
+    font-size: 100%;
+    font-style:bold;
+    padding: 10px;
+}
+
+
+#submit
+{
+margin-top:10px;
+}
+
