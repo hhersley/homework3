@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 
   <body>
-<div class="row row-cols-lg-3">
+<div class="row row-cols-lg-6">
   <?php
 $servername = "localhost";
 $username = "hahersle_homework3";
