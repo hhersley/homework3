@@ -37,9 +37,10 @@
     
     
       </ul>
+      
        <form action="HandlePost.php" method="post">
 Name: <input type="text" name="name"><br>
-Title: <input type="text" name="title"><br>
+Search a Title: <input type="text" name="title"><br>
 <input id="submit" type="submit">
 </form>
          <img id="img1" src="https://www.iconpacks.net/icons/2/free-opened-book-icon-3163-thumb.png" class="rounded float-end" alt="tiny picture">
