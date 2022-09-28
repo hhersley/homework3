@@ -2,7 +2,6 @@
 
   <body>
     
-    <h1>Homework 3</h1>
     <h1>Book Series</h1>
     
 <table class="table table-striped">
