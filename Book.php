@@ -2,7 +2,7 @@
 
   <body>
     <h1>Library</h1>
-<div class="card-group">
+<div class="row row-cols-lg-6">
     <?php
 $servername = "localhost";
 $username = "hahersle_homework3";
@@ -23,13 +23,15 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
+    <div class="col">
+
      <div id="card" class="card"  style="width: 15rem; height: 30rem;">
          <img  src=<?=$row["image"]?> class="card-img-top" alt="...">
 
   <div  class="card-body">
     <h5 class="card-title"><?=$row["title"]?></h5>
   </div>
-
+      </div>
   </div>
 <?php
   }
