@@ -24,7 +24,7 @@ if ($conn->connect_error) {
 }
  $title = $_POST["title"];
 
-$sql = "Select title, image from Book";
+$sql = "Select title, image from Book where title = '$title'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
