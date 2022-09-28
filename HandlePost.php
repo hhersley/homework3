@@ -24,7 +24,7 @@ if ($conn->connect_error) {
 }
  $title = $_POST["title"];
 
-$sql = "Select title, image from Book where title LIKE %'.$title''";
+$sql = "Select title, image from Book";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
