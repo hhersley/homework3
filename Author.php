@@ -3,7 +3,7 @@
 <?php require_once('header.php'); ?>
 
   <body>
-<div class="row row-cols-lg-6">
+<div class="card-group">
     <?php
 $servername = "localhost";
 $username = "hahersle_homework3";
@@ -25,7 +25,6 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     
  ?>
-  <div class="col">
    <div class="card">
     <div class="card-body">
       <h5 class="card-title"><?=$row["author_name"]?></h5>
@@ -41,7 +40,7 @@ if ($result->num_rows > 0) {
 ?>
       </ul></p>
   </div>
-    </div>
+    
     </div>
 <?php
   }
