@@ -1,7 +1,7 @@
 <?php require_once('header.php'); ?>
 
   <body>
-    <h1>Library</h1>
+    <h2>Library</h2>
 <div class="row row-cols-lg-6">
     <?php
 $servername = "localhost";
