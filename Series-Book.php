@@ -1,6 +1,8 @@
 <?php require_once('header.php'); ?>
 
   <body>
+          <h2>Start Your Series!</h2>
+
 <div class="row row-cols-lg-6">
   <?php
 $servername = "localhost";
@@ -24,7 +26,6 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-      <h2>Start Series $sid</h2>
 
   <div class="col">
      <div id="card" class="card"  style="width: 15rem; height: 30rem;">
