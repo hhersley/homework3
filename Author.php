@@ -3,6 +3,7 @@
 <?php require_once('header.php'); ?>
 
   <body>
+    <h2>Authors</h2>
 <div class="card-group">
     <?php
 $servername = "localhost";
