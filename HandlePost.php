@@ -1,8 +1,8 @@
  <?php require_once('header.php'); ?>
 
   <body>
-    Hello <?php echo $_POST["name"]; ?> !<br>
-You are looking for: <?php echo $_POST["title"]; ?><br>
+   <h2>Hello <?php echo $_POST["name"]; ?> !<br></h2>
+   <h2>You are looking for: <?php echo $_POST["title"]; ?><br></h2>
     
      <?php
     emptypost();
