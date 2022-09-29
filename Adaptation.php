@@ -1,5 +1,5 @@
 <?php require_once('header.php'); ?>
-
+<h2>Adaptations</h2>
     
 <table class="table table-striped">
   <thead>
