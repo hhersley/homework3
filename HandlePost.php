@@ -43,7 +43,7 @@ if ($result->num_rows > 0) {
 <?php
   }
 } else {
-  echo "So sorry, that isn't in our library!";
+  echo "  So sorry, that isn't in our library!";
 }
 $conn->close();
 ?>
