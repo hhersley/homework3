@@ -2,7 +2,7 @@
 
   <body>
     
-    <h1>Book Series</h1>
+    <h2>Book Series</h2>
     
 <table class="table table-striped">
   <thead>
